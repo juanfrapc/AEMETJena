@@ -1,4 +1,4 @@
-package Main;
+package Ejemplos;
 
 import org.apache.jena.atlas.logging.LogCtl;
 import org.apache.jena.rdf.model.Model;

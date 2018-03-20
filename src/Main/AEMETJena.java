@@ -1,5 +1,6 @@
 package Main;
 
+import Model.Grafo;
 import java.io.IOException;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
@@ -35,7 +36,9 @@ public class AEMETJena {
         response = client.newCall(request).execute();
         JSONArray jsonArray = new JSONArray(response.body().string());
         System.out.println(jsonArray.getJSONObject(0).toString(4));
-        
+        Grafo grafo = new Grafo();
+        grafo.addStation(jsonArray.getJSONObject(0));
+        grafo.print();
     }
 
 }

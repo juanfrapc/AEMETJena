@@ -1,4 +1,4 @@
-package Main;
+package Ejemplos;
 
 import java.util.Iterator;
 import org.apache.jena.atlas.logging.LogCtl;
