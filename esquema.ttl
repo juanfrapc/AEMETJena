@@ -1,0 +1,16 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> 
+@prefix si2: <http://www.si2.com/si2/>
+
+si2:Joven a si2:Persona .
+
+si2:Persona rdfs:subClassOf si2:SerVivo .
+
+si2:progenitor
+	rdfs:range si2:Persona;
+	rdfs:domain si2:Persona.
+	
+si2:madre rdfs:subPropertyOf si2:progenitor .
+
+si2:edad rdfs:range xsd:integer.

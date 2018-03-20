@@ -1,0 +1,6 @@
+@prefix si2: <http://www.si2.com/si2/>.
+
+si2:juan a si2:Joven;
+	si2:madre si2:rosa;
+	si2:edad 13;
+	si2:padre si2:jose .
